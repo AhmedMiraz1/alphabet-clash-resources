@@ -103,7 +103,7 @@
 
           <div class="flex justify-between w-[53%]">
             <button class="bg-[#894189] rounded-3xl p-6">
-              Life <i class="fa-solid fa-heart-circle-bolt"></i> <span>1</span>
+              Life <i class="fa-solid fa-heart-circle-bolt"></i> <span id="current-life">5</span>
             </button>
             <button class="bg-[#360490] rounded-3xl p-6">
               Score
@@ -115,14 +115,14 @@
       </section>
 
       <!-- score bar -->
-      <section class="hidden flex justify-center items-center min-h-screen">
+      <section id="final-score" class="hidden flex justify-center items-center min-h-screen">
         <div class="bg-[#FFFFFF12] text-center p-11 rounded-3xl">
           <p class="text-4xl font-bold">Game over!</p>
           <h1 class="text-8xl my-5">
             <span class="font-extrabold text-white">Score : </span>
-            <span>14</span>
+            <span id="last-score">14</span>
           </h1>
-          <button
+          <button onclick="play()"
             class="text-2xl font-bold p-5 text-black bg-white rounded-3xl my-5"
           >
             PLAY AGAIN
